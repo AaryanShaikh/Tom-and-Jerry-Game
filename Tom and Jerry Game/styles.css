@@ -1,0 +1,53 @@
+:root {
+  --day: #232526;
+  --back: #232526; 
+  --backShad: inset 5px 5px 8px #1a1c1d,inset -5px -5px 8px #2c2e30;
+}
+*{
+	cursor: url('tom.png'), auto;
+	transition: 0.3s;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vh;
+	height: 100vh;
+	overflow: hidden;/* btn can move anywhere */
+	background: url('bg.png') var(--day);
+	background-size: cover;
+	transition: 0.5s;
+}
+#evilbtn{
+	position: absolute;
+	top: 35%;
+	left: 39%;
+	white-space: nowrap;
+	font-size: 2rem;
+	height: 100px;
+	width: 100px;
+	background-color: transparent;
+	background-image: url('jerry.png');
+	border: none;
+}
+#change{
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	-webkit-appearance: none;
+	height: 100px;
+	width: 100px;
+	border-radius: 150px;
+	background: linear-gradient(145deg, #202122, #252829);
+	box-shadow:  5px 5px 13px #1a1b1c,
+             -5px -5px 13px #2c2f30;
+    border: none;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    transition: 0.5s;
+}
+#change:active{
+	transition: 0.5s;
+	background: var(--back);
+	box-shadow: var(--backShad);
+} 
